@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import EnhanceComment from './HOC/Comment';
+import Comment from './HOC/Comment';
+import EnhanceLike from './HOC/Like';
+import Increment from './pureCompunde/Increment';
+import Pure from './pureCompunde/Pure';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      {/* <Increment></Increment>
+       <Pure></Pure> */}
+       <EnhanceLike></EnhanceLike>
+     <EnhanceComment></EnhanceComment>
+         </div>
   );
 }
 
